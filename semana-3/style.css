@@ -1,75 +1,40 @@
-body {
-    margin: 0%;
+html, body{
+    width: 100%;
+    margin: 0;
+}
+
+body{
     font-family: 'Roboto', sans-serif;
-    background: #F2F2F2;
-}
-h1 {
-    font-size: 50px;
-}
-#watchword {
-    font-size: 20px;
-}
-.sidebar {
-    width: 160px;
-}
-#side-bar li {
-	display: inline;
-	height: 50px;
-    background: #49A37B;
-    background: linear-gradient(to bottom,  #49A37B,  #add6c4);
-    border-radius: 5px;	
-}
-#our-job {
-    height: 10%;
-    width: 80%;
-    background-color: #AACE9B;
-    align-items: center;
-    padding: 50px;
-    margin: 20px;
-}
-p.oj {
-    font-size: 24;
-}
-aside {
-    background-color: #529E7C;
+    font-size: 16px;
 }
 
-p {
-    font-size: 24px;
-}
-.contact-info {
-    
-    height: 496px;
-    width: 551px;
-    outline-style: solid;
-    outline-style: ;
-    align-content: center;
-}
-#contact .title{
-    color: red;
-}
-.sm-column {
-    display: inline-block;
-    background: linear-gradient(to bottom, #AACE9B, #bbeeea);
-}
-#functionalities {
-    font-size: 24px;
-    align-items: center;
-}
-.funcs {
-    display: inline-block;
-    align-content: space-between;
-    width: 188px;
-    height: 188px;
+header{
+    display: flex;
+    height: 50px;
     background-color: #539E7D;
+    padding: 16px 30px;
 }
-p.funcs {
-    text-size-adjust: 22px;
+header nav{
+    text-align: right;
+    width: 100%;
 }
-#why-us {
-    display: ;
-    width: 785;
-    height: 218;
-    background-color: #49A37B;
 
+header a{
+    padding: 12px 30px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+aside {
+    display: list-item;
+    width: 198px;
+    height: 230px;
+    background: linear-gradient(180deg, #529E7C 0%, rgba(82, 158, 124, 0) 100%);
+}
+aside a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 20px;
 }
