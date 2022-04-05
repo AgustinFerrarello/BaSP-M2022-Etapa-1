@@ -1,53 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Ferrarello, Agustín" content="width=device-width, initial-scale=1.0">
-    <title>Trackgenix</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trackgenix</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     </head>
     <body> 
-        <h1>
-            <span>
-                <a href="file:///C:/Users/ferra/Desktop/BaSP/Semana-3/index.html">
-                TRACKGENIX
-                </a href>
-            </span>
-        </h1>
         <header id="watchword">
-            The time is yours, but we help it.
-            <img src="C:\Users\ferra\Desktop\BaSP\BaSP-M2022-Etapa-1\semana-3\images\Logo.png" title="TRACKGENIX" alt="trackgenix-logo" width="330">
+            <nav id="nav-bar">
+                <img src=".\images\Logo.png" title="TRACKGENIX" alt="trackgenix-logo" width="330">
+                <ul>
+                    <li>
+                        <a href="#our-job">Our job
+                        </a>
+                    </li>    
+                    <li>
+                        <a href="#functionalities">Functionalities
+                        </a>
+                    </li>    
+                    <li>
+                        <a href="#why-us">Why us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#who-we-are">Who we are
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#site-map">Site map
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <nav id="side-bar">
-            <ul>
-                <li>
-                    <a href="#our-job">Our job
-                    </a>
-                </li>    
-                <li>
-                    <a href="#functionalities">Functionalities
-                    </a>
-                </li>    
-                <li>
-                    <a href="#why-us">Why us
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact">Contact us
-                    </a>
-                </li>
-                <li>
-                    <a href="#who-we-are">Who we are
-                    </a>
-                </li>
-                <li>
-                    <a href="#site-map">Site map
-                    </a>
-                </li>
-            </ul>
-        </nav>
         <aside class="sidebar">
             <nav>
                 <ul>
@@ -70,46 +62,67 @@
                 </ul>
             </nav>
         </aside>
+        <a href="./">
+            <h1>
+                TRACKGENIX
+            </h1>
+        </a href>
         <section id="our-job">
-            <span>OUR JOB</span>
-            <p>
-                What we do at Trackgenix
-            </p>
-            <p>
-                We provide Software Development, services to companies arround the world
-            </p>
+            <div>
+                <h3>OUR JOB
+                </h3>
+            </div>
+            <span>
+                <h2>
+                    What we do at Trackgenix?
+                </h2>
+                <p>
+                    We provide Software Development, services to companies arround the world
+                </p>
+            </span>
         </section>
         <section id="functionalities">
-            <span>FUNCTIONALITIES</span>
-            <p>
-                <a>TIME SHEET
-                </a>
-                <a>REPORTS
-                </a>
-                <a>RESOURSES MANAGMENT
-                </a>
-                <a>MULTIPLE ROLES
-                </a>
+            <div>
+                <h3>
+                    FUNCTIONALITIES
+                </h3>
+            </div>
+            <p class="funcs">
+                <span>TIME SHEET
+                </span>
+                <span>REPORTS
+                </span>
+                <span>RESOURSES MANAGMENT
+                </span>
+                <span>MULTIPLE ROLES
+                </span>
             </p>
         </section>
         <section id="why-us">
-            <span>COOSE TRACKGENIX</span>
-            <p>
-                Why you should use Trackgenix?
-            </p>
-            <ul>
-                <li>It's a productivity booster.
-                </li>
-                <li>It allows traceability of the processes and employee control.
-                </li>
-                <li>It provides leadership and team management, all in one App.
-                </li>
-                <li>It helps manager to determine the path for decision making.
-                </li>
-            </ul>
+            <div>CHOOSE TRACKGENIX
+            </div>
+            <div>
+                <h3>
+                    Why you should use Trackgenix?
+                </h3>
+                <ul>
+                    <li>It's a productivity booster.
+                    </li>
+                    <li>It allows traceability of the processes and employee control.
+                    </li>
+                    <li>It provides leadership and team management, all in one App.
+                    </li>
+                    <li>It helps manager to determine the path for decision making.
+                    </li>
+                </ul>
+            </div>
         </section>
         <section id="contact">
-            <span class="title">CONTACT US</span>
+            <span class="title">
+                <h3>
+                    CONTACT US
+                </h3>
+            </span>
             <form class="contact-info">
                 <div class="title">
                     Leave your info and we'll get it touch.    
@@ -122,11 +135,12 @@
                         <input type="text" name="email" placeholder="E-mail">
                     </div>
                     <div>
-                        <select name="select"
-                        <option value=""></option>
-                        <option value="Human resourses">Human resourses</option>
-                        <option value="Systems">Systems</option>
-                        <option value="Commerce">Commerce</option>
+                        <select name="select">
+                            <option value=""></option>
+                            <option value="Human resourses">Human resourses</option>
+                            <option value="Systems">Systems</option>
+                            <option value="Commerce">Commerce</option>
+                        </select>
                     </div>
                     <div>
                         <textarea name="message" id="" placeholder="Your message..." cols="30" rows="5"></textarea>
@@ -138,7 +152,11 @@
             </form>
         </section>
         <section id="#who-we-are">
-            <span>WHO WE ARE</span>
+            <div>
+                <h3>
+                    WHO WE ARE
+                </h3>
+            </div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra mauris vitae mauris egestas, 
                 sed porttitor neque mattis. Cras commodo viverra magna et tempus. Proin ac metus non ante consequat 
@@ -146,9 +164,15 @@
             </p>
         </section>
         <section id="site-map">
-            <span>SITE MAP</span>
             <div>
-                PRODUCTS
+                <h3>
+                    SITE MAP
+                </h3>
+            </div   >
+            <span class="sm-column">
+                <h4>
+                    PRODUCTS
+                </h4>
                 <ol>
                     <li>FEATURES
                     </li>
@@ -159,8 +183,10 @@
                     <li>EXTRAS
                     </li>
                 </ol>
-            </div>
-            <div>COMPANY
+            </span>
+            <div class="sm-column">
+                <h4>COMPANY
+                </h4>
                 <ol>
                     <li>ABOUT US
                     </li>
@@ -171,8 +197,10 @@
                     <li>BLOG
                     </li>
                 </ol>
-            </div>
-            <div>SUPPORT
+            </span>
+            <span class="sm-column">
+                <h4>SUPPORT
+                </h4>
                 <ol>
                     <li>HELP
                     </li>
@@ -182,29 +210,29 @@
                     </li>
                     <li>CONTACT</li>
                 </ol>
-            </div>
+            </span>
         </section>
         <section>
             <footer id="footer">
                 <div>
                     <a href="https://www.instagram.com/" target="blank">
-                        <img src="C:\Users\ferra\Desktop\BaSP\BaSP-M2022-Etapa-1\semana-3\images\Instagram.png" width="30" 
+                        <img src=".\images\Instagram.png" width="30" 
                         title="Instagram" alt="Instagram-logo">
                     </a>
                     <a href="https://www.linkedin.com/" target="blank">
-                        <img src="C:\Users\ferra\Desktop\BaSP\BaSP-M2022-Etapa-1\semana-3\images\Linkedin.png" width="30" 
+                        <img src=".\images\Linkedin.png" width="30" 
                         title="LinkedIn" alt="Linkedin-logo">
                     </a>
                     <a href="https://www.facebook.com/" target="blank">
-                        <img src="C:\Users\ferra\Desktop\BaSP\BaSP-M2022-Etapa-1\semana-3\images\facebook.png" width="30" 
+                        <img src=".\images\facebook.png" width="30" 
                         title="Facebook" alt="Facebook-logo">
                     </a>
                     <a href="https://github.com/" target="blank">
-                        <img src="C:\Users\ferra\Desktop\BaSP\BaSP-M2022-Etapa-1\semana-3\images\GitHub.png" width="30" 
+                        <img src=".\images\GitHub.png" width="30" 
                         title="GitHub" alt="Github-logo">
                     </a>
                     <a href="https://twitter.com/home" target="blank">
-                        <img src="C:\Users\ferra\Desktop\BaSP\BaSP-M2022-Etapa-1\semana-3\images\twitter.png" width="30" 
+                        <img src=".\images\twitter.png" width="30" 
                         title="Twitter" alt="Twitter-logo">
                     </a>
                 </div>
