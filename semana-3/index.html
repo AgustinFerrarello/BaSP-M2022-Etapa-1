@@ -5,149 +5,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Ferrarello, Agustín" content="width=device-width, initial-scale=1.0">
     <title>Trackgenix</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     </head>
     <body> 
         <h1>
             <span>
-                <a href="file:///C:/Users/ferra/Desktop/BaSP/Semana-1/index.html">
+                <a href="file:///C:/Users/ferra/Desktop/BaSP/Semana-3/index.html">
                 TRACKGENIX
                 </a href>
             </span>
         </h1>
-        <header>The time is yours, but we help it.</header>
-        <aside>
+        <header id="watchword">
+            The time is yours, but we help it.
+            <img src="C:\Users\ferra\Desktop\BaSP\BaSP-M2022-Etapa-1\semana-3\images\Logo.png" title="TRACKGENIX" alt="trackgenix-logo" width="330">
+        </header>
+        <nav id="side-bar">
+            <ul>
+                <li>
+                    <a href="#our-job">Our job
+                    </a>
+                </li>    
+                <li>
+                    <a href="#functionalities">Functionalities
+                    </a>
+                </li>    
+                <li>
+                    <a href="#why-us">Why us
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">Contact us
+                    </a>
+                </li>
+                <li>
+                    <a href="#who-we-are">Who we are
+                    </a>
+                </li>
+                <li>
+                    <a href="#site-map">Site map
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="sidebar">
             <nav>
                 <ul>
                     <li>
-                        <a href="">
-                            HOME
+                        <a href="#">HOME
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            SING UP
+                        <a href="#">SING UP
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            LOG IN
+                        <a href="#">LOG IN
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            CONTACT US
+                        <a href="#">CONTACT US
                         </a>
                     </li>
                 </ul>
             </nav>
         </aside>
-        <nav>
-            <ul>
-                <li>
-                    <a id="section=oj">
-                        Our job
-                    </a>
-                </li>    
-                <li>
-                    <a>
-                        Functionalities
-                    </a>
-                </li>    
-                <li>
-                    <a>
-                        Why us
-                    </a>
-                </li>
-                <li>
-                    <a>
-                        Contact us
-                    </a>
-                </li>
-                <li>
-                    <a>
-                        Who we are
-                    </a>
-                </li>
-                <li>
-                    <a>
-                        Site map
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <section id="oj">
+        <section id="our-job">
             <span>OUR JOB</span>
             <p>
-                <b>What we do at Trackgenix</b>
+                What we do at Trackgenix
             </p>
             <p>
                 We provide Software Development, services to companies arround the world
             </p>
-            <header>
-                <img src="C:\Users\ferra\Desktop\BaSP\Semana-1\images\png-transparent-floor-grandfather-clocks-drawing-movement-coloring-book-clock.png" title="TRACKGENIX" width="330">
-            </header>
         </section>
-        <section>
+        <section id="functionalities">
             <span>FUNCTIONALITIES</span>
             <p>
-                <a>
-                    TIME SHEET
+                <a>TIME SHEET
                 </a>
-                <a>
-                    REPORTS
+                <a>REPORTS
                 </a>
-                <a>
-                    RESOURSES MANAGMENT
+                <a>RESOURSES MANAGMENT
                 </a>
-                <a>
-                    MULTIPLE ROLES
+                <a>MULTIPLE ROLES
                 </a>
             </p>
         </section>
-        <section>
+        <section id="why-us">
             <span>COOSE TRACKGENIX</span>
             <p>
                 Why you should use Trackgenix?
             </p>
             <ul>
-                <li>
-                    It's a productivity booster.
+                <li>It's a productivity booster.
                 </li>
-                <li>
-                    It allows traceability of the processes and employee control.
+                <li>It allows traceability of the processes and employee control.
                 </li>
-                <li>
-                    It provides leadership and team management, all in one App.
+                <li>It provides leadership and team management, all in one App.
                 </li>
-                <li>
-                    It helps manager to determine the path for decision making.
+                <li>It helps manager to determine the path for decision making.
                 </li>
             </ul>
         </section>
-        <section>
-            <span>CONTACT US</span>
-            <p>
-                Leave your info and we'll get it touch
-            </p>
-                <form action="process.php" method="POST"></form>
-                <label>Full name</label>
-                <input type="text" name="full-name">        
-                <form action="process.php" method="POST"></form>
-                <label>E-mail</label>
-                <input type="email" name="email">        
-                <select name="select"
-                    <option value=""></option>
-                    <option value="Human resourses">Human resourses</option>
-                    <option value="Systems">Systems</option>
-                    <option value="Commerce">Commerce</option>
-                <form action="process.php" method="POST"></form>
-                <label>Your message</label>
-                <textarea name="message" id="" cols="30" rows="5"></textarea>     
-            <p>
-                <input type="submit" name="submit" value="SEND">
-            </p>
+        <section id="contact">
+            <span class="title">CONTACT US</span>
+            <form class="contact-info">
+                <div class="title">
+                    Leave your info and we'll get it touch.    
+                </div>
+                <div class="body">
+                    <div>
+                        <input type="text" name="name" placeholder="NAME">
+                    </div>
+                    <div>
+                        <input type="text" name="email" placeholder="E-mail">
+                    </div>
+                    <div>
+                        <select name="select"
+                        <option value=""></option>
+                        <option value="Human resourses">Human resourses</option>
+                        <option value="Systems">Systems</option>
+                        <option value="Commerce">Commerce</option>
+                    </div>
+                    <div>
+                        <textarea name="message" id="" placeholder="Your message..." cols="30" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit" value="SEND">
+                    </div>
+                </div>
+            </form>
         </section>
-        <section>
+        <section id="#who-we-are">
             <span>WHO WE ARE</span>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra mauris vitae mauris egestas, 
@@ -155,75 +145,66 @@
                 pellentesque. Vivamus convallis, magna in pellentesque porta, elit erat maximus erat.
             </p>
         </section>
-        <section>
+        <section id="site-map">
             <span>SITE MAP</span>
-            <b>PRODUCTS</b>
-            <ol>
-                <li>
-                    FEATURES
-                </li>
-                <li>
-                    DOWNLOADS
-                </li>
-                <li>
-                    INTEGRATIONS
-                </li>
-                <li>
-                    EXTRAS
-                </li>
-            </ol>
-            <b>COMPANY</b>
-            <ol>
-                <li>
-                    ABOUT US
-                </li>
-                <li>
-                    OUR CLIENTS
-                </li>
-                <li>
-                    RESOURCES
-                </li>
-                <li>
-                    BLOG
-                </li>
-            </ol>
-            <b>SUPPORT</b>
-            <ol>
-                <li>
-                    HELP
-                </li>
-                <li>
-                    TUTORIALS
-                </li>
-                <li>
-                    API
-                </li>
-                <li>
-                    CONTACT</li>
-
-            </ol>
+            <div>
+                PRODUCTS
+                <ol>
+                    <li>FEATURES
+                    </li>
+                    <li>DOWNLOADS
+                    </li>
+                    <li>INTEGRATIONS
+                    </li>
+                    <li>EXTRAS
+                    </li>
+                </ol>
+            </div>
+            <div>COMPANY
+                <ol>
+                    <li>ABOUT US
+                    </li>
+                    <li>OUR CLIENTS
+                    </li>
+                    <li>RESOURCES
+                    </li>
+                    <li>BLOG
+                    </li>
+                </ol>
+            </div>
+            <div>SUPPORT
+                <ol>
+                    <li>HELP
+                    </li>
+                    <li>TUTORIALS
+                    </li>
+                    <li>API
+                    </li>
+                    <li>CONTACT</li>
+                </ol>
+            </div>
         </section>
         <section>
             <footer id="footer">
                 <div>
                     <a href="https://www.instagram.com/" target="blank">
-                        <img src="C:\Users\ferra\Desktop\BaSP\Semana-1\images\Instagram.png" width="30" 
+                        <img src="C:\Users\ferra\Desktop\BaSP\BaSP-M2022-Etapa-1\semana-3\images\Instagram.png" width="30" 
                         title="Instagram" alt="Instagram-logo">
                     </a>
                     <a href="https://www.linkedin.com/" target="blank">
-                        <img src="C:\Users\ferra\Desktop\BaSP\Semana-1\images\Linkedin.png" width="30" 
+                        <img src="C:\Users\ferra\Desktop\BaSP\BaSP-M2022-Etapa-1\semana-3\images\Linkedin.png" width="30" 
                         title="LinkedIn" alt="Linkedin-logo">
                     </a>
                     <a href="https://www.facebook.com/" target="blank">
-                        <img src="C:\Users\ferra\Desktop\BaSP\Semana-1\images\facebook.png" width="30" 
+                        <img src="C:\Users\ferra\Desktop\BaSP\BaSP-M2022-Etapa-1\semana-3\images\facebook.png" width="30" 
                         title="Facebook" alt="Facebook-logo">
                     </a>
                     <a href="https://github.com/" target="blank">
-                        <img src="C:\Users\ferra\Desktop\BaSP\Semana-1\images\GitHub.png" width="30" 
+                        <img src="C:\Users\ferra\Desktop\BaSP\BaSP-M2022-Etapa-1\semana-3\images\GitHub.png" width="30" 
                         title="GitHub" alt="Github-logo">
                     </a>
                     <a href="https://twitter.com/home" target="blank">
-                        <img src="C:\Users\ferra\Desktop\BaSP\Semana-1\images\twitter.png" width="30" 
+                        <img src="C:\Users\ferra\Desktop\BaSP\BaSP-M2022-Etapa-1\semana-3\images\twitter.png" width="30" 
                         title="Twitter" alt="Twitter-logo">
                     </a>
                 </div>
