@@ -64,16 +64,32 @@ h3{
     padding: 20px 60px;
 }
 
-.boxs{
-    text-align: center;
-}
-
 .box{
     display: inline-block;
     margin: 0 15px;
     width: 180px;
-    height: 140px;
-    padding: 20px 0;
+    height: 120px;
+    padding: 50px 0 0;
     color: white;
     background: linear-gradient(180deg, #539E7D 0%, rgba(83, 158, 125, 0.598958) 74.48%, rgba(83, 158, 125, 0) 100%);
+    font-weight: 500;
+}
+
+form{
+    padding: 0!important;
+    border: 2px solid black;
+}
+
+form .title{
+    padding: 20px;
+    background-color: white;
+}
+form input,
+form select,
+form textarea{
+    background-color: #A9CE9B;
+    width: 100%;
+    padding: 14px 0;
+    border: 0;
+    border-bottom: 1px solid black;
 }
