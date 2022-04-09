@@ -5,7 +5,6 @@ header{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #49A37B 0%, rgba(37, 82, 62, 0.502994) 100%, rgba(0, 0, 0, 0) 13.22%), #FFFFFF;
     justify-content: space-between;
     align-items: center;
-    /* flex-direction: column; */
 }
 .btn-burg {
     display: flex;
