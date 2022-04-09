@@ -1,0 +1,50 @@
+h3 {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+h2 { 
+    width: 50%;
+    align-items: start;
+}
+p {
+    width: 50%;
+    order: 3;
+}
+div .box-text{
+    width: 100%;
+}
+.box-text{
+    display: flex;
+    width: auto;
+    flex-basis: 480px;
+    background: #A9CE9B;
+    padding: 1em 2em;
+    margin: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.txt-c { 
+    text-align: center;
+}
+
+div img{
+    justify-content: end;
+    order: 2;
+    width: 25%;
+}
+
+#why-us p {
+    order: -1;
+    width: 100%;
+    text-align: center;
+    flex-wrap: nowrap;
+}
+#why-us ul{
+    display: flex;
+    flex-direction: column;
+    list-style: inside;
+    list-style-position: outside;
+    align-content: flex-end;
+}
