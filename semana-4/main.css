@@ -148,26 +148,28 @@ form textarea{
         /* transform: translateX(90px) */
     }
   }
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
     h3{
         text-align: center;
         padding: 14px 0;
-        transform: translateX(0px);
+        /* transform: translateX(0px); */
     }
     .box-text{
         background: #A9CE9B;
         padding: 10px 20px;
         margin: auto;
         width: 60%;
-        transform: translateX(0px);
+        /* transform: translateX(0px); */
     }
     .text-c {
-        transform: translateX(0px);
+        flex-wrap: nowrap;
+        /* transform: translateX(0px); */
     }
     #why-us {
-        transform: translateX(0px);
+        /* transform: translateX(0px); */
     }
     .box {
-        transform: translateX(0px);
-    } */
+        width: 20%;
+        /* transform: translateX(0px); */
+    }
 }

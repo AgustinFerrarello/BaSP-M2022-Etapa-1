@@ -19,7 +19,7 @@
         font-weight: 600;
     }
 }    
-/* 
+
 @media (min-width: 1024px){
     .sidebar {
         display: list-item;
@@ -36,5 +36,5 @@
         text-decoration: none;
         color: black;
         font-weight: 600;
-    } */
+    }
 }
