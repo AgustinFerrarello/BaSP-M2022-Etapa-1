@@ -1,19 +1,48 @@
 h3 {
     display: flex;
+    width: auto;
     justify-content: center;
     margin: 1em;
 }
 h2 { 
-    width: 50%;
-    align-items: start;
-}
-p {
-    width: 50%;
-    order: 3;
+    margin: 0 0 1em 0;
 }
 div .box-text{
     width: 100%;
 }
+#functionalities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 2em 0 ;
+    width: 50%;
+    background: linear-gradient(180deg, #539E7D 0%, rgba(83, 158, 125, 0.598958) 74.48%, rgba(83, 158, 125, 0) 100%);
+    color: #ffffff;
+    text-align: center;
+}
+
+.box-2 {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    background: linear-gradient(180deg, #AACE9B 0%, rgba(170, 206, 155, 0.541667) 45.83%, rgba(170, 206, 155, 0.708333) 95.31%, rgba(170, 206, 155, 0) 100%);
+}
+.text-in-box {
+    text-align: center;
+}
+
+#site-map ol {
+    list-style: inside decimal;
+    padding: 0;
+}
+
 .box-text{
     display: flex;
     width: auto;
@@ -24,6 +53,14 @@ div .box-text{
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+}
+#our-job .box-text {
+    display: flex;
+    width: auto;
+    background: #A9CE9B;
+    padding: 1em 2em;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 .txt-c { 
     text-align: center;
@@ -47,4 +84,27 @@ div img{
     list-style: inside;
     list-style-position: outside;
     align-content: flex-end;
+}
+#contact {
+    width: 90%;
+    margin: auto;
+}
+form{
+
+    padding: 0!important;
+    border: 2px solid black;
+}
+
+form .title{
+    padding: 20px;
+    background-color: white;
+}
+form input,
+form select,
+form textarea{
+    background-color: #A9CE9B;
+    width: 100%;
+    padding: 14px 0;
+    border: 0;
+    border-bottom: 1px solid black;
 }
