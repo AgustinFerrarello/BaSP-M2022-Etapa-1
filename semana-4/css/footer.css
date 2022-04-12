@@ -1,7 +1,7 @@
 footer {
     margin: 2em 0 0 0;
+    text-align: center;
 }
-
 footer div {
     display: flex;
     justify-content: center;

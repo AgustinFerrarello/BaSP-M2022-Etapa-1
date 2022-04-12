@@ -1,8 +1,9 @@
 h3 {
-    display: flex;
+    display: block;
     width: auto;
-    justify-content: center;
-    margin: 1em;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
 }
 h2 { 
     margin: 0 0 1em 0;
@@ -16,7 +17,6 @@ div .box-text{
     align-items: center;
     justify-content: center;
 }
-
 .box {
     display: flex;
     margin: auto;
@@ -27,7 +27,6 @@ div .box-text{
     color: #ffffff;
     text-align: center;
 }
-
 .box-2 {
     margin: auto;
     text-align: center;
@@ -38,12 +37,10 @@ div .box-text{
 .text-in-box {
     text-align: center;
 }
-
 #site-map ol {
     list-style: inside decimal;
     padding: 0;
 }
-
 .box-text{
     display: flex;
     width: auto;
@@ -66,13 +63,11 @@ div .box-text{
 .txt-c { 
     text-align: center;
 }
-
 div img{
     justify-content: end;
     order: 2;
     width: 25%;
 }
-
 #why-us p {
     order: -1;
     width: 100%;
@@ -80,11 +75,11 @@ div img{
     flex-wrap: nowrap;
 }
 #why-us ul{
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     list-style: inside;
-    list-style-position: outside;
     align-content: flex-end;
+    justify-content: center;
 }
 #contact {
     width: 90%;
@@ -95,7 +90,6 @@ form{
     padding: 0!important;
     border: 2px solid black;
 }
-
 form .title{
     padding: 20px;
     background-color: white;
@@ -109,19 +103,15 @@ form textarea{
     border: 0;
     border-bottom: 1px solid black;
 }
-
 @media (min-width: 768px){
     .box {
         width: 40%;
         margin: 20px auto;
-        transform: translateX(76px)
     }
     .text-c{
         display: flex;
         flex-wrap: wrap;
-        transform: translateX(76px)
     }
-
     #site-map nav{
         display: flex;
     }
@@ -135,41 +125,25 @@ form textarea{
         background: #A9CE9B;
         flex-direction: row;
         flex-wrap: nowrap;
-        width: 50%;
+        width: 47%;
         padding: 1em 2em;
-    }
-    .box-text {
-        transform: translateX(83px)
-    }
-    h3 {
-        transform: translateX(83px)
-    }
-    #why-us {
-        transform: translateX(90px)
     }
   }
 @media (min-width: 1024px) {
     h3{
         text-align: center;
         padding: 14px 0;
-        transform: translateX(0px);
     }
     .box-text{
         background: #A9CE9B;
         padding: 10px 20px;
         margin: auto;
         width: 60%;
-        transform: translateX(0px);
     }
     .text-c {
         flex-wrap: nowrap;
-        transform: translateX(0px);
-    }
-    #why-us {
-        transform: translateX(0px);
     }
     .box {
         width: 20%;
-        transform: translateX(0px);
     }
 }
