@@ -1,0 +1,50 @@
+header{
+    display: flex;
+    width: 100%;
+    height: 4em;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #49A37B 0%, rgba(37, 82, 62, 0.502994) 100%, rgba(0, 0, 0, 0) 13.22%), #FFFFFF;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-burg {
+    display: flex;
+    width: auto;
+    margin: 2%;
+
+}
+header img {
+    align-self: center;
+    width: 150px;
+    height: 3em;
+    flex-shrink: 1;
+    margin: auto;
+}
+
+header nav{
+    display: none;
+}
+
+@media (min-width: 1024px){
+    .btn-burg{
+        display: none;
+    }
+    header{
+        display: flex;
+        padding: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #49A37B 0%, rgba(37, 82, 62, 0.502994) 100%, rgba(0, 0, 0, 0) 13.22%), #FFFFFF;
+    }
+    
+    header nav{
+        display: flex;
+        text-align: center;
+        width: 100%;
+    }
+    
+    header a{
+        padding: 20px 14px;
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+    }
+}

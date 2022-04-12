@@ -1,0 +1,24 @@
+footer {
+    margin: 2em 0 0 0;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+footer div img {
+    width: 100%;
+
+}
+footer .ftr-icn{
+    width: auto;
+    margin: 0 80px;
+}
+footer .ftr-icn a {
+    text-align: center;
+    margin: 1em 1em !important;
+    width: 20%;
+    padding: 0 0;
+    max-width: 45px;
+    min-width: 25px;
+}
