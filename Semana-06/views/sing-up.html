@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sing-up</title>
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/sing-up.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav>
+                <a href="../views/index.html">Home</a>
+                <a>></a>
+                <a>Employees</a>
+            </nav>
+            <img src="../assets/Logo.png" title="TRACKGENIX" alt="trackgenix-logo" height="60">
+            <nav>
+                <a href="../views/login.html">Log in</a>
+                <a>Sing up</a>
+            </nav>
+        </header>
+        <section id="form-sec">
+            <div class="form-cont">
+                <h1>Sign Up</h1>
+                <form action="">
+                    <div>
+                        <input type="text" name="name" placeholder="Name">
+                        <p class="txt-hide">
+                            Only letters, more than three.
+                        </p>
+                    </div>
+                    <div>
+                        <input type="text" name="last name" placeholder="Last name">
+                        <p class="txt-hide">
+                            Only letters, more than three.
+                        </p>
+                    </div>
+                    <div>
+                        <input type="number" name="id" placeholder="Real ID">
+                        <p class="txt-hide">
+                            Only numbers, more than seven.
+                        </p>
+                    </div>
+                    <div>
+                        <label for="b-date">Born date</label>
+                        <input type="date" id="b-date" name="b-date" max="2004-04-25" placeholder="Born date">
+                    </div>
+                    <div>
+                        <input type="tel" maxlength="10" name="phone" placeholder="Phone">
+                        <p class="txt-hide">
+                            Only numbers, more than seven.
+                        </p>
+                    </div>
+                    <div>
+                        <input type="text" name="adress" placeholder="Adress">
+                    </div>
+                    <div>
+                        <input type="text" name="city" placeholder="City">
+                    </div>
+                    <div>
+                        <input type="text" name="pc" placeholder="Postal code">
+                    </div>
+                    <div>
+                        <input type="text" name="name" placeholder="E-mail">
+                        <p class="txt-hide">
+                            The email you entered doesn't exist.
+                        </p>
+                    </div>
+                    <div>
+                        <input type="password" name="password" placeholder="Password">
+                        <p class="txt-hide">
+                            The password you've entered is incorrect.
+                        </p>
+                    </div>
+                    <div>
+                        <input type="password" name="password" placeholder="Repeat password">
+                        <p class="txt-hide">
+                            The passwords doesn't match.
+                        </p>
+                    </div>
+                </form>  
+                <div>
+                    <input type="submit" class="btn" name="submit" value="Continue">
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
