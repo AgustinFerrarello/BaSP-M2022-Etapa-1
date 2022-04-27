@@ -7,6 +7,7 @@
         <title>Login</title>
         <link rel="stylesheet" href="../styles/reset.css">
         <link rel="stylesheet" href="../styles/login.css">
+        <script defer src="../javascript/login.js" ></script>
     </head>
     <body>
         <header>
@@ -24,17 +25,17 @@
         <section>
             <div class="form-cont">
                 <h1>Log In</h1>
-                <form>
+                <form id="form-id">
                     <div>
-                        <input type="email" name="name" placeholder="E-mail">
-                        <p class="txt-hide">
-                            The email you entered isn't registered.
+                        <input type="email" name="name" id="email-log" placeholder="E-mail">
+                        <p class="txt-hide" id="em-hide">
+                            
                         </p>
                     </div>
                     <div>
-                        <input type="password" name="password" placeholder="Password">
-                        <p class="txt-hide">
-                            The password you've entered is incorrect.
+                        <input type="password" name="password" id="pass-log" placeholder="Password">
+                        <p class="txt-hide" id="pass-hide">
+                            
                         </p>
                     </div>
                     <div class="separate">
@@ -44,15 +45,11 @@
                         </div>
                         <a href="#">Forgot password?</a>
                     </div>
+                    <div>
+                        <input type="submit" class="btn" name="submit" value="Continue">
+                    </div>
                 </form>
-                <div>
-                    <input type="submit" class="btn" name="submit" value="Continue">
-                </div>
             </div>
         </section>
-    
-    
-    
-    
     </body>
 </html>
