@@ -8,6 +8,7 @@ var bDate = document.getElementById('b-date');
 var phone = document.getElementById('phone-id');
 var phoneError =document.getElementById('phoneError');
 var adress = document.getElementById('adress-id');
+var adressError = document.getElementById('adressError');
 var city = document.getElementById('city-id');
 var postCode = document.getElementById('postal-id');
 var email = document.getElementById('email-log');
@@ -23,6 +24,7 @@ var passRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 var nameRegex = /[a-zA-Z]{3,}/;
 var numbersRegex = /[0-9]{7,}/;
 var phoneRegex = /[0-9]{10,}/;
+var adressRegex = /[a-zA-Z]+" "+ [0-9]{3,}/;
 
 var emailErrorMsg;
 var passErrorMsg;
@@ -31,6 +33,7 @@ var fNErrorMsg;
 var lNErrorMsg;
 var dniErrorMsg;
 var phoneErrorMsg;
+var adressErrorMsg;
 
 function fNameCheck() {
   var nameOk = nameRegex.test(fName.value);
@@ -74,7 +77,7 @@ function dniCheck() {
     dniError.innerHTML = dniErrorMsg;
     dniError.classList.remove('txt-hide');
   } else {
-    console.log("ID:" + dni.value + " it's Ok")
+    console.log("ID:" + dni.value + " it's OK")
   }
 }
 function dniReset() {
@@ -89,18 +92,37 @@ function phoneCheck() {
   if (!phoneOk) {
     phoneErrorMsg = "Ten numbers required.";
     phoneError.innerHTML = phoneErrorMsg;
-    phoneError.classList.add('txt-hide');
-    console.log("no va")
+    phoneError.classList.remove('txt-hide');
   } else {
-    console.log("si va")
+    console.log("Phone number: " + phone.value + " it's OK" )
   }
 }
 function phoneReset() {
-  console.log
-
+  phoneError.classList.add('txt-hide');
+  phoneError.innerHTML= "";
 }
 phone.addEventListener('blur', phoneCheck);
 phone.addEventListener('focus', phoneReset);
+
+function adressCheck() {
+var adressOk = adressRegex.test(adress.value);
+  if (!adressOk) {
+    adressErrorMsg = "The adress need Street and numbers";
+    adressError.innerHTML = adressErrorMsg;
+    adressError.classList.remove('txt-hide');
+    console.log("no ba");
+  } else {
+    console.log("ci ba");
+  }
+}
+function adressReset() {
+  adressError.classList.add('txt-hide');
+  adressError.innerHTML= "";
+
+}
+adress.addEventListener('blur', adressCheck);
+adress.addEventListener('focus', adressReset);
+
 
 
 
