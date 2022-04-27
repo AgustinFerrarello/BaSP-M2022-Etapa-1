@@ -17,7 +17,7 @@ To see the exercises visit the following link and open the web inspector of your
 *https://agustinferrarello.github.io/BaSP-M2022-Etapa-1/semana-5/index.html*
 ## W.06
 This week we were working using DOM to modify the css.  
-I have to do a lot of corrections to finish the problem well.
+I have to do a lot of corrections to finish the problem well.   
 *https://agustinferrarello.github.io/BaSP-M2022-Etapa-1/Semana-06/views/index.html*
 ## Licence
 Project autor: Ferrarello, Agustín  
