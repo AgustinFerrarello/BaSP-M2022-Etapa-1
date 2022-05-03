@@ -126,8 +126,8 @@ function dniCheck() {
     dniError.innerHTML = dniErrorMsg;
     dniError.classList.remove('txt-hide');
     dniFlag = false;
-  } else if (dniOk.length < 7){
-    dniErrorMsg = "At least 7 numbers.";
+  } else if (dniOk.length < 7 || dniOk.length > 8){
+    dniErrorMsg = "DNI must have between 7 and 8 numbers.";
     dniError.innerHTML = dniErrorMsg;
     dniError.classList.remove('txt-hide');
     dniFlag = false;
@@ -142,6 +142,39 @@ function dniReset() {
 }
 dni.addEventListener('blur', dniCheck);
 dni.addEventListener('focus', dniReset);
+
+function bDayCheck() {
+ var bDayOk = bDate.value
+ var month = bDayOk.substring(0, 2);
+ var slash1 = bDayOk.substring(2, 3);
+ var day = bDayOk.substring(3, 5);
+ var slash2 = bDayOk.substring(5, 6);
+ var year = bDayOk.substring(6);
+ month = Number(month);
+ day = Number(day);
+ year = Number(year);
+ if(month > 12 || month < 1) {
+  alert("mes invalido");
+  bDateFlag = false;
+} else if (day > 31 || day < 1) {
+  alert("dia invalido");
+  bDateFlag = false;
+} else if (year > 2022 || year < 1900) {
+  alert("año invalido");
+  bDateFlag = false;
+} else if(slash1 !== "/" || slash2 !== "/") {
+  alert("formato invalido");
+  bDateFlag = false;
+} else {
+  bDateFlag = true;
+}
+}
+function bDayReset(){
+
+}
+
+bDate.addEventListener('blur', bDayCheck);
+// bDate.addEventListener('focus', bDayReset);
 
 function phoneCheck() {
   var phoneOk = phone.value;
@@ -393,6 +426,18 @@ function formValidation(event) {
     + "City: " + city.value + '\n' + 'Postal Code: ' + postCode.value + '\n' + 'E-mail: ' + email.value + '\n' 
     + 'Password: ' + pass.value;
     alert(successMsg);
+    var url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup' + '?name=' + fName.value + '&lastName=' + lName.value + '&dni=' + dni.value + '&dob=' + bDate.value + '&phone=' + phone.value + '&address=' + address.value + '&city=' + city.value + '&zip=' + postCode.value + '&email=' + email.value + '&password=' + pass.value;
+    fetch(url)
+      .then(function (response) {
+        return response.json()
+      })
+      .then(function (jsonResponse) {
+        console.log(jsonResponse);
+        alert(jsonResponse.msg);
+      })
+      .catch(function (error) {
+        alert("Server down");
+    })
     
   } else {
     console.log("error");
