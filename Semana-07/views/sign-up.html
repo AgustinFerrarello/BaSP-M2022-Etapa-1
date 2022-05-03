@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign-up</title>
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/sign-up.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <script defer src="../javascript/sign-up.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <nav>
+                <a href="../views/index.html">Home</a>
+                <a>></a>
+                <a>Employees</a>
+            </nav>
+            <img src="../assets/Logo.png" title="TRACKGENIX" alt="trackgenix-logo" height="60">
+            <nav>
+                <a href="../views/login.html">Log in</a>
+                <a>Sign up</a>
+            </nav>
+        </header>
+        <section id="form-sec">
+            <div class="form-cont">
+                <h1>Sign Up</h1>
+                <form id="form-id">
+                    <div>
+                        <input type="text" id="name-id" class="error fname" name="name" placeholder="First name" >
+                        <p class="txt-hide" id="fNameError">
+                            ""
+                        </p>
+                    </div>
+                    <div>
+                        <input type="text" id="ln-id" class="error fname"  name="last name" placeholder="Last name">
+                        <p class="txt-hide" id="lNameError">
+                            ""
+                        </p>
+                    </div>
+                    <div>
+                        <input type="number" id="dni-id" class="error fdni"  name="id" placeholder="Real ID">
+                        <p class="txt-hide" id="dniError">
+                            ""
+                        </p>
+                    </div>
+                    <div>
+                        <label for="b-date">Born date</label>
+                        <br>
+                        <input type="date" id="b-date" name="b-date" max="2004-04-25" placeholder="Born date">
+                        <p class="txt-hide" id="bDayError">
+                            ""
+                        </p>
+                    </div>
+                    <div>
+                        <input type="number" maxlength="10" class="error"  id="phone-id" name="phone" placeholder="Phone">
+                        <p class="txt-hide" id="phoneError">
+                            ""
+                        </p>
+                    </div>
+                    <div>
+                        <input type="text" id="address-id" class="error"  name="address" placeholder="address">
+                        <p class="txt-hide" id="addressError"> 
+                             ""
+                        </p>
+                    </div>
+                    <div>
+                        <input type="text" id="city-id" class="error"  name="city" placeholder="City">
+                        <p class="txt-hide" id="cityError">
+                            ""
+                        </p>
+                    </div>
+                    <div>
+                        <input type="text" id="postal-id" class="error"  name="pc" placeholder="Postal code">
+                        <p class="txt-hide" id="postError">
+                            ""
+                        </p>
+                    </div>
+                    <div>
+                        <input type="text" id="email-log" class="error"  name="name" placeholder="E-mail">
+                        <p class="txt-hide" id="em-hide">
+                            ""
+                        </p>
+                    </div>
+                    <div>
+                        <input type="password" id="pass-log" class="error"  name="password" placeholder="Password">
+                        <p class="txt-hide" id="pass-hide">
+                            ""
+                        </p>
+                    </div>
+                    <div>
+                        <input type="password" id="pass-ver" class="error"  name="password" placeholder="Repeat password">
+                        <p class="txt-hide" id="passVer-hide">
+                            ""
+                        </p>
+                    </div>
+                    <div>
+                        <input type="submit" class="btn" name="submit" value="Continue">
+                    </div>
+                </form>  
+            </div>
+        </section>
+    </body>
+</html>
