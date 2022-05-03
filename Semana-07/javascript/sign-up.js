@@ -24,8 +24,8 @@ var form = document.getElementById('form-id');
 
 var emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 var numbers = '1234567890';
-var letters = 'abcdefghyjklmnñopqrstuvwxyz';
-var numerosyletras='abcdefghyjklmnñopqrstuvwxyz0123456789';
+var letters = 'qwertyuiopasdfghjklñzxcvbnmQWERTYUIOPASDFGHJKLÑZXCVBNM';
+var numerosyletras='qwertyuiopasdfghjklñzxcvbnm0123456789';
 
 var fNErrorMsg;
 var lNErrorMsg;
@@ -78,7 +78,7 @@ function fNameCheck() {
   }
 }
 function fNameReset() {
-  fNErrorMsg = '\n';
+  fNErrorMsg = "reset";
   fNError.innerHTML = fNErrorMsg;
   fNError.classList.add('txt-hide');
 }
@@ -113,7 +113,7 @@ function lNameCheck() {
 }
 
 function lNameReset() {
-  lNError.innerHTML = "";
+  lNError.innerHTML = "reset";
   lNError.classList.add('txt-hide');
 }
 lName.addEventListener('blur', lNameCheck);  
@@ -137,40 +137,40 @@ function dniCheck() {
   }
 }
 function dniReset() {
-  dniError.innerHTML = "";
+  dniError.innerHTML = "reset";
   dniError.classList.add('txt-hide');
 }
 dni.addEventListener('blur', dniCheck);
 dni.addEventListener('focus', dniReset);
 
 function bDayCheck() {
- var bDayOk = bDate.value
- var month = bDayOk.substring(0, 2);
- var slash1 = bDayOk.substring(2, 3);
- var day = bDayOk.substring(3, 5);
- var slash2 = bDayOk.substring(5, 6);
- var year = bDayOk.substring(6);
- month = Number(month);
- day = Number(day);
- year = Number(year);
- if(month > 12 || month < 1) {
-  alert("mes invalido");
-  bDateFlag = false;
-} else if (day > 31 || day < 1) {
-  alert("dia invalido");
-  bDateFlag = false;
-} else if (year > 2022 || year < 1900) {
-  alert("año invalido");
-  bDateFlag = false;
-} else if(slash1 !== "/" || slash2 !== "/") {
-  alert("formato invalido");
-  bDateFlag = false;
-} else {
-  bDateFlag = true;
-}
+  var bDayOk = bDate.value
+  var month = bDayOk.substring(0, 2);
+  var slash1 = bDayOk.substring(2, 3);
+  var day = bDayOk.substring(3, 5);
+  var slash2 = bDayOk.substring(5, 6);
+  var year = bDayOk.substring(6);
+  month = Number(month);
+  day = Number(day);
+  year = Number(year);
+  if(month > 12 || month < 1) {
+    alert("mes invalido");
+    bDateFlag = false;
+  } else if (day > 31 || day < 1) {
+    alert("dia invalido");
+    bDateFlag = false;
+  } else if (year > 2022 || year < 1900) {
+    alert("año invalido");
+    bDateFlag = false;
+  } else if(slash1 !== "/" || slash2 !== "/") {
+    alert("formato invalido");
+    bDateFlag = false;
+  } else {
+    bDateFlag = true;
+  }
 }
 function bDayReset(){
-
+  
 }
 
 bDate.addEventListener('blur', bDayCheck);
@@ -194,7 +194,7 @@ function phoneCheck() {
   }
 }
 function phoneReset() {
-  phoneError.innerHTML= "";
+  phoneError.innerHTML= "reset";
   phoneError.classList.add('txt-hide');
 }
 phone.addEventListener('blur', phoneCheck);
@@ -245,15 +245,15 @@ function addressCheck() {
       addressError.innerHTML = addressErrorMsg;
       addressError.classList.remove('txt-hide');
       addressFlag = false;
-      }
+    }
     addressErrorMsg = address.value;
-
-
+    
+    
   } 
 }
 function addressReset() {
-  addressError.innerHTML= "";
-  addressError.classList.remove('txt-hide');
+  addressError.innerHTML= "reset";
+  addressError.classList.add('txt-hide');
 }
 address.addEventListener('blur', addressCheck);
 address.addEventListener('focus', addressReset);
@@ -284,8 +284,8 @@ function cityCheck() {
   }
 }
 function cityReset() {
-  cityError.innerHTML = "";
-  cityError.classList.remove('txt-hide');
+  cityError.innerHTML = "reset";
+  cityError.classList.add('txt-hide');
 }
 city.addEventListener('blur', cityCheck);
 city.addEventListener('focus', cityReset);
@@ -316,8 +316,8 @@ function postCheck() {
   }
 }
 function postReset() {
-  postError.innerHTML = "";
-  postError.classList.remove('txt-hide');
+  postError.innerHTML= "reset";
+  postError.classList.add('txt-hide');
 }
 postCode.addEventListener('blur', postCheck);
 postCode.addEventListener('focus', postReset);
@@ -340,7 +340,7 @@ function emailCheck() {
   }
 }
 function emailReset() {
-  emError.innerHTML = "";
+  emError.innerHTML = "reset";
   emError.classList.remove('txt-hide');
 }
 email.addEventListener('blur', emailCheck);
@@ -364,36 +364,36 @@ function passCheck() {
     var notANumberOrLetter = true;
     for(var i=0; i<passOk.length; i++){
       if (numbers.indexOf(passOk.charAt(i),0)!=-1){
-          hasNumbers = true;
+        hasNumbers = true;
       }
     }
     for(var i=0; i<passOk.length; i++){
         if (letters.indexOf(passOk.charAt(i),0)!=-1){
             hasLetters = true;
-        }
+          }
     }
     for(var i=0; i<passOk.length; i++){
-        if (numerosyletras.indexOf(passOk.charAt(i),0)==-1){
-            notANumberOrLetter = false;
-        }
+      if (numerosyletras.indexOf(passOk.charAt(i),0)==-1){
+        notANumberOrLetter = false;
+      }
     }
     if (hasNumbers == true && hasLetters == true && notANumberOrLetter == true){
-        passErrorMsg = "Password it's OK.";
-        passFlag = true;
-      } else {
-        passErrorMsg = "Password invalid.";
-        passError.innerHTML = passErrorMsg;
-        passError.classList.remove('txt-hide');
-        passFlag = false;
+      passErrorMsg = "Password it's OK.";
+      passFlag = true;
+    } else {
+      passErrorMsg = "Password invalid.";
+      passError.innerHTML = passErrorMsg;
+      passError.classList.remove('txt-hide');
+      passFlag = false;
     }
   }
-    passErrorMsg = pass.value;
-    return true;
+  passErrorMsg = pass.value;
+  return true;
   }
-
-function passReset() {
-  passError.innerHTML = "";
-  passError.classList.remove('txt-hide');
+  
+  function passReset() {
+  passError.innerHTML = "reset";
+  passError.classList.add('txt-hide');
 }
 pass.addEventListener('blur', passCheck);
 pass.addEventListener('focus', passReset);
@@ -409,8 +409,8 @@ function passVerification() {
   }
 }
 function passVerReset() {
-  passVerError.innerHTML = "";
-  passVerError.classList.remove('txt-hide');
+  passVerError.innerHTML = "reset";
+  passVerError.classList.add('txt-hide');
 }
 passVer.addEventListener('blur', passVerification);
 passVer.addEventListener('focus', passVerReset);
@@ -420,7 +420,6 @@ function formValidation(event) {
   event.preventDefault();
   if(fNFlag && lNFlag && dniFlag && bDateFlag && phoneFlag && addressFlag && cityFlag && postFlag && emailFlag && 
     passFlag && passVerFlag) {
-    console.log("ok");
     var successMsg = 'Complete name: ' + lName.value + fName.value + '\n' + 'ID: ' + dni.value + '\n' + 
     'Birthday: ' + bDateErrorMsg + '\n' + 'Phone: ' + phone.value + '\n' + 'Address: ' + address.value + '\n' 
     + "City: " + city.value + '\n' + 'Postal Code: ' + postCode.value + '\n' + 'E-mail: ' + email.value + '\n' 
@@ -428,11 +427,20 @@ function formValidation(event) {
     alert(successMsg);
     var url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup' + '?name=' + fName.value + '&lastName=' + lName.value + '&dni=' + dni.value + '&dob=' + bDate.value + '&phone=' + phone.value + '&address=' + address.value + '&city=' + city.value + '&zip=' + postCode.value + '&email=' + email.value + '&password=' + pass.value;
     fetch(url)
-      .then(function (response) {
+    .then(function (response) {
         return response.json()
       })
       .then(function (jsonResponse) {
-        console.log(jsonResponse);
+        localStorage.setItem("Name", fName.value);
+        localStorage.setItem("Lastname", lName.value);
+        localStorage.setItem("ID", dni.value);
+        localStorage.setItem("Birthday", bDate.value);
+        localStorage.setItem("Phone", phone.value);
+        localStorage.setItem("Address", address.value);
+        localStorage.setItem("City", city.value);
+        localStorage.setItem("Zip code", postCode.value);
+        localStorage.setItem("E-mail", email.value);
+        localStorage.setItem("Password", pass.value);
         alert(jsonResponse.msg);
       })
       .catch(function (error) {
@@ -440,7 +448,6 @@ function formValidation(event) {
     })
     
   } else {
-    console.log("error");
     var errorMsg = 'First name: ' + fNErrorMsg + '\n' + 'Last name: ' + lNErrorMsg + '\n' + 'ID: ' + dniErrorMsg + 
         '\n' + 'Birthday: ' + bDateErrorMsg + '\n' + 'Phone: ' + phoneErrorMsg + '\n' + 'Address: ' + addressErrorMsg + 
         '\n' + "City: " + cityErrorMsg + '\n' + 'Postal Code: ' + postErrorMsg + '\n' + 'E-mail: ' + emailErrorMsg + 
