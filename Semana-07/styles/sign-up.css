@@ -18,7 +18,9 @@ form {
     height: 17em;
     align-content: space-evenly;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 form div {
     padding: 3px;
