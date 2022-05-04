@@ -19,6 +19,10 @@ To see the exercises visit the following link and open the web inspector of your
 This week we were working using DOM to modify the css.  
 I have to do a lot of corrections to finish the problem well.   
 *https://agustinferrarello.github.io/BaSP-M2022-Etapa-1/Semana-06/views/index.html*
+## W.07
+This week we were working on last week validations to gent information from an API to validate a log in, also on the sign up all the validations are saved on local storage.    
+You can test everything on the following link.  
+*https://agustinferrarello.github.io/BaSP-M2022-Etapa-1/Semana-07/views/index.html*
 ## Licence
 Project autor: Ferrarello, Agustín  
 All rigths reserved.
